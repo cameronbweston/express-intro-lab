@@ -7,6 +7,7 @@ const app = express()
 
 //Configure the app (app.set)
 app.set('view engine', 'ejs');
+app.use(express.static('style'));
 
 //Mount Middleware (app.use)    
 

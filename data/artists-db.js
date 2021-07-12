@@ -3,9 +3,9 @@ export {
 }
 
 const favArtists = [
-  {name: 'Phoebe Bridgers', done: true, _id: 125223},
-  {name: 'John Mayer', done: false, _id: 127904},
-  {name: 'Monsune', done: false, _id: 139608},
+  {name: 'Phoebe Bridgers', genre: 'Folk Rock', _id: 125223},
+  {name: 'John Mayer', genre: 'Singer/Songwriter', _id: 127904},
+  {name: 'Monsune', genre: 'R&B', _id: 139608},
 ]
 
 const find = (conditions, callback) => {
