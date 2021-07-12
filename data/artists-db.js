@@ -2,10 +2,10 @@ export {
 	find
 }
 
-const todos = [
-  {text: 'Feed llama', done: true, _id: 125223},
-  {text: 'Sleep under the stars', done: false, _id: 127904},
-  {text: 'Buy milk', done: false, _id: 139608},
+const favArtists = [
+  {name: 'Phoebe Bridgers', done: true, _id: 125223},
+  {name: 'John Mayer', done: false, _id: 127904},
+  {name: 'Monsune', done: false, _id: 139608},
 ]
 
 const find = (conditions, callback) => {
@@ -16,7 +16,7 @@ const find = (conditions, callback) => {
       throw new TypeError('Please pass in an object')
     }
     // If the object is empty, return all the todos
-    if (Object.keys(conditions).length === 0) return callback(null, todos)
+    if (Object.keys(conditions).length === 0) return callback(null, favArtists)
 	// deal with errors
   } catch (error) {
     console.log(error)

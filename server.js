@@ -1,6 +1,6 @@
 //import modules
 import express from 'express'
-import * as todoDb from './data/todo-db.js'
+import * as artists from './data/artists-db.js'
 
 //Create express app
 const app = express()
@@ -20,12 +20,12 @@ app.get('/home', function(req, res) {
 })
 
 app.get('/todos', function(req, res) {
-    todoDb.find({}, function(error, todos) {
+    artists.find({}, function(error, artist) {
         res.render('todos/index', {
             //left of the colon: what it is called in <html>
             //right of the colon: what it is called here
-            todos: todos,
-            error: error
+            artist,
+            error
         } );
     })
 })

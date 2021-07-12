@@ -7,16 +7,16 @@
     <title>First Express App</title>
 </head>
 <body>
-    <h1>Todos</h1>
+    <h1>Artists</h1>
     <% if(error) { %>
         <h2><%= error %></h2>
     <%  } %>
     <ul>
-        <% todos.forEach(function(todo) { %>
+        <% artist.forEach(function(person) { %>
             <li>
-                <%= todo.text %> 
+                <%= person.name %> 
                 -
-                <%= todo.done ? 'done' : 'not done' %> 
+                <%= person.done ? 'done' : 'not done' %> 
             </li>
         <% }) %> 
     </ul>
